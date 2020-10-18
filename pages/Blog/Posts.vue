@@ -20,7 +20,6 @@
 // import axios from 'axios'
 import PostSummary from '@/components/PostSummary.vue'
 import Butter from 'buttercms'
-require('@/assets/butter-y.png')
 const butter = Butter('916e0c9041fae7dad15987437aa6cef411ecf7aa')
 export default {
   name: 'BlogPosts',
