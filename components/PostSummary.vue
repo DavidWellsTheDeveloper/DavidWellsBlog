@@ -6,7 +6,7 @@
       :src="post.featured_image"
       max-height="350"
     ></v-img>
-    <v-card-title class="text-no-wrap">
+    <v-card-title>
       {{ post.title }}
     </v-card-title>
     <v-divider></v-divider>
@@ -41,4 +41,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.v-card__title {
+  word-break: normal; /* maybe !important  */
+}
+</style>
