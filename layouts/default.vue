@@ -80,6 +80,11 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-typewriter',
+          title: 'Blog',
+          to: '/blog/posts',
+        },
       ],
       miniVariant: false,
       right: true,
