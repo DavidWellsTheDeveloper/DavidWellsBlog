@@ -1,6 +1,13 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+    <v-col>
+      <div class="text-center">
+        <h1>Welcome to My Colorado Avalanche Blog</h1>
+      </div>
+      <h3>Site under construction...</h3>
+      <a href="/blog/posts/">See Blog posts</a>
+    </v-col>
+    <!-- <v-col cols="12" sm="8" md="6">
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -76,18 +83,18 @@
           <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
         </v-card-actions>
       </v-card>
-    </v-col>
+    </v-col> -->
   </v-row>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+// import Logo from '~/components/Logo.vue'
+// import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo,
+    // Logo,
+    // VuetifyLogo,
   },
 }
 </script>
