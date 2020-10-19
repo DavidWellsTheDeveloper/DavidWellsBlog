@@ -37,11 +37,6 @@ export default {
     },
   },
   mounted() {
-    // axios
-    //   .get('http://localhost:1337/posts/?_sort=published_at')
-    //   .then((response) => {
-    //     this.posts = response.data
-    //   })
     butter.post
       .list({
         page: 1,
@@ -50,6 +45,18 @@ export default {
       .then((res) => {
         this.posts = res.data.data
       })
+  },
+  head() {
+    return {
+      title: 'Blog Posts',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'See popular & trending posts about the Colorado Avalanche',
+        },
+      ],
+    }
   },
 }
 </script>

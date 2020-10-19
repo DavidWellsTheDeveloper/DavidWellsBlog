@@ -6,12 +6,17 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - davidwellsblog',
-    title: 'davidwellsblog',
+    titleTemplate: '%s - Avalanche Blog',
+    title: 'Avalanche Blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Find the latest Colorado Avalanche news and analysis. Read the blog & see team statistics.',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -49,9 +54,12 @@ export default {
       dark: true,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          // primary: colors.blue.darken2,
+          primary: '#6F263D',
+          // accent: colors.grey.darken3,
+          accent: '#A2AAAD',
+          // secondary: colors.amber.darken3,
+          secondary: '#236192',
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

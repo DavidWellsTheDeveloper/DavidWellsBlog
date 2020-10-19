@@ -1,21 +1,23 @@
 <template>
-  <v-card class="mx-auto my-12" outlined>
-    <v-img
-      v-if="post.featured_image"
-      contain
-      :src="post.featured_image"
-      max-height="350"
-    ></v-img>
-    <v-card-title>
-      {{ post.title }}
-    </v-card-title>
-    <v-divider></v-divider>
-    <v-card-text>
-      {{ post.summary }}
+  <a :href="'/blog/' + post.slug">
+    <v-card class="mx-auto my-12" shaped color="secondary">
+      <v-img
+        v-if="post.featured_image"
+        contain
+        :src="post.featured_image"
+        max-height="350"
+      ></v-img>
+      <v-card-title>
+        {{ post.title }}
+      </v-card-title>
       <v-divider></v-divider>
-      Written By: {{ admin_full_name }}
-    </v-card-text>
-  </v-card>
+      <v-card-text>
+        {{ post.summary }}
+        <v-divider></v-divider>
+        Written By: {{ admin_full_name }}
+      </v-card-text>
+    </v-card>
+  </a>
 </template>
 
 <script>
@@ -44,5 +46,9 @@ export default {
 <style lang="css" scoped>
 .v-card__title {
   word-break: normal; /* maybe !important  */
+  color: black;
+}
+a {
+  text-decoration: none;
 }
 </style>
