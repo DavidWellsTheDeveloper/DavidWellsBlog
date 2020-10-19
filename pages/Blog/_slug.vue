@@ -4,6 +4,13 @@
     <h4 v-if="post.data.author">
       {{ post.data.author.first_name }} {{ post.data.author.last_name }}
     </h4>
+    <v-img
+      class="mb-4"
+      :src="post.data.featured_image"
+      :alt="post.data.featured_image_alt"
+      max-height="500"
+      contain
+    ></v-img>
     <v-divider></v-divider>
     <div v-html="post.data.body"></div>
 
@@ -52,7 +59,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'See popular & trending posts about the Colorado Avalanche',
+          content: this.$route.params.slug,
         },
       ],
     }
