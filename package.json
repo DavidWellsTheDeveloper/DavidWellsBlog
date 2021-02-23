@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
-    "buttercms": "^1.2.3",
+    "buttercms": "^1.2.6",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "showdown": "^1.9.1",
